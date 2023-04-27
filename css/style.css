@@ -920,7 +920,7 @@ body.block {
   .header__burger.active::after {
     content: "";
     transform: rotate(-45deg);
-    bottom: 50%;
+    bottom: 45%;
     left: 0;
   }
   .header__nav,
