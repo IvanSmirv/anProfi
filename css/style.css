@@ -1189,6 +1189,21 @@ body.block {
   .clients__client {
     padding: 25px;
   }
+  .services__service:last-child {
+    border-bottom: none;
+  }
+  .services__services {
+    border-top: 1px solid var(--borderColor);
+    border-left: 1px solid var(--borderColor);
+    border-right: 1px solid var(--borderColor);
+    border-bottom: none;
+  }
+  .business-project__content {
+    padding: 0px 0px 20px 0px;
+  }
+  .clients__content {
+    padding: 20px 0px 0px 0px;
+  }
 }
 
 /* adaptability */
