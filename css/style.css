@@ -1259,11 +1259,11 @@ body.block {
   }
   .form__phone a {
     padding: 17px 20px 17px 39px;
-    background-position: 13px center;
+    background-position: 0px center;
     background-size: 26% 26%;
   }
   .form__phone a:hover {
-    background-position: 13px center;
+    background-position: 0px center;
   }
   .form__form input,
   .form__form button {
