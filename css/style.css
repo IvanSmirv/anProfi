@@ -1286,9 +1286,9 @@ body.block {
   .phoneCommon a {
     padding: 25px 20px 25px 32px;
   }
-  .popup__phone a {
+  /* .popup__phone a {
     background-position: -8px center;
-  }
+  } */
   .popup__title {
     font-size: 20px;
   }
