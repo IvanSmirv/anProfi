@@ -94,6 +94,18 @@ li {
 
 /* --------------- */
 
+.body-wrapper {
+  min-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1 1 auto;
+}
+
 .phoneCommon {
   margin: 10px 0px 0px 0px;
   cursor: pointer;
@@ -670,8 +682,8 @@ body.block {
   color: var(--mainColor);
   background: none;
   background-image: url(../img/icons/phone-green.svg);
-  background-position: 6px center;
-  background-size: 25% 25%;
+  background-position: 20px center;
+  background-size: 26% 26%;
   background-repeat: no-repeat;
   outline: 1px solid var(--mainColor);
 }
@@ -681,7 +693,7 @@ body.block {
   font-size: 36px;
   font-weight: 500;
   text-align: center;
-  padding: 100px 0px 40px 0px;
+  padding: 70px 0px 40px 0px;
   border-bottom: 1px solid var(--borderColor);
 }
 
@@ -717,7 +729,6 @@ body.block {
   flex-direction: column;
   align-items: center;
   padding: 60px;
-  border-right: 1px solid var(--borderColor);
 }
 
 .form__form input {
@@ -736,6 +747,7 @@ body.block {
 
 .form__form button {
   font-family: var(--Mont);
+  cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
   border: 1px solid var(--mainColor);
@@ -743,6 +755,12 @@ body.block {
   padding: 20px 0px;
   color: var(--mainColor);
   font-weight: 700;
+  transition: 0.3s;
+}
+
+.form__form button:hover {
+  background-color: var(--mainColor);
+  color: #ffffff;
 }
 
 .form__form input,
@@ -852,6 +870,74 @@ body.block {
 .header__drop-menu {
   display: none;
 }
+/* ----------------- */
+.task {
+}
+.task__title {
+  font-family: var(--Nunito);
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  margin: 40px 0px;
+}
+.task__body {
+}
+.task__tasks {
+}
+.task__task-row {
+  border-top: 1px solid var(--borderColor);
+}
+.task__task-row:last-child {
+  border-bottom: 1px solid var(--borderColor);
+}
+.task__task {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 0 1 50%;
+  padding: 20px;
+  /* border-top: 1px solid var(--borderColor); */
+}
+.task__img {
+  max-height: 340px;
+  flex: 0 1 30%;
+}
+.task__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.task__task > div:nth-child(2) {
+  padding: 0px 0px 0px 20px;
+  flex: 0 1 70%;
+}
+.task__task div:nth-child(2) h2 {
+  font-family: var(--Nunito);
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0px 0px 10px 0px;
+}
+.task__task div:nth-child(2) p {
+  font-family: var(--Nunito);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin: 0px 0px 20px 0px;
+}
+.task__content {
+  display: flex;
+  justify-content: space-between;
+  border-left: 1px solid var(--borderColor);
+  border-right: 1px solid var(--borderColor);
+}
+.task__task:nth-child(1) {
+  border-right: 1px solid var(--borderColor);
+}
+.task__btnPopup {
+}
+.popupActive {
+}
+
+/* ----------------- */
 /*- adaptability */
 
 @media screen and (max-width: 1260px) {
@@ -953,18 +1039,26 @@ body.block {
   .main-page__text {
     text-align: center;
   }
+  .main-page__btnPopup {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .form__form {
+    padding: 60px 10px;
+  }
+  .task__content {
+    flex-direction: column;
+  }
+  .task__task:nth-child(1) {
+    border-bottom: 1px solid var(--borderColor);
+  }
 }
 
 /* 768px- 992px */
 @media screen and (max-width: 992px) {
   .container {
     width: 720px;
-  }
-  .main-page__btnPopup {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
   }
   .services__title {
     width: 100%;
@@ -1078,6 +1172,31 @@ body.block {
   }
   .contacts {
     display: none;
+  }
+  .task__task {
+    flex-direction: column;
+  }
+  .task__img {
+    width: 100%;
+    height: 500px;
+    flex-basis: 0;
+  }
+  .task__img img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+  }
+  .task__task div:nth-child(2) h2 {
+    margin: 10px 0px;
+    text-align: center;
+  }
+  .task__task div:nth-child(2) p {
+    text-align: center;
+  }
+  .task__btnPopup {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -1211,6 +1330,12 @@ body.block {
   }
   .clients__content {
     padding: 20px 0px 0px 0px;
+  }
+  .task__task > div:nth-child(2) {
+    padding: 0px;
+  }
+  .task__btnPopup {
+    padding: 20px 30px;
   }
 }
 
