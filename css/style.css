@@ -1259,7 +1259,7 @@ body.block {
   }
   .form__phone a {
     padding: 17px 20px 17px 39px;
-    background-position: -8px center;
+    /* background-position: -8px center; */
     background-size: 30% 30%;
   }
   .form__form input,
