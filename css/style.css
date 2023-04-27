@@ -305,6 +305,10 @@ body.block {
   padding: 25px 35px 25px 55px;
 }
 
+.header__btnPopup {
+  background: none;
+}
+
 .header__phone,
 .header__btnPopup {
   cursor: pointer;
@@ -317,15 +321,17 @@ body.block {
   font-family: var(--Mont);
   font-weight: 600;
   font-size: 20px;
-  color: white;
+  color: var(--mainColor);
 }
 
 .header__btnPopup:hover {
   background: no-repeat;
+  color: #ffffff;
+  background-color: var(--mainColor);
 }
 
 .header__btnPopup:hover span {
-  color: var(--mainColor);
+  color: #ffffff;
 }
 
 /* ------------ */
@@ -434,7 +440,7 @@ body.block {
 .services__title {
   text-align: center;
   margin: 0 auto 50px;
-  width: 45%;
+  width: 57%;
 }
 
 .services__title span {
@@ -537,7 +543,7 @@ body.block {
 
 .business-project__content > .container > div div:nth-child(1) p {
   font-family: var(--Nunito);
-  font-size: 22px;
+  font-size: 24px;
   margin: 0px 0px 20px 0px;
 }
 
@@ -608,7 +614,7 @@ body.block {
 .clients__content > div:nth-child(2) p,
 .clients__content > div:nth-child(2) p span {
   font-family: var(--Nunito);
-  font-size: 19px;
+  font-size: 24px;
 }
 
 .clients__content > div:nth-child(2) p {
@@ -649,14 +655,14 @@ body.block {
   font-family: var(--Mont);
   font-size: 18px;
   font-weight: 500;
-  padding: 25px 35px 25px 55px;
+  padding: 25px 40px 25px 70px;
   color: #ffffff;
   background: #92ad9c;
   border-radius: 5px;
   transition: 0.3s;
   background-image: url(../img/icons/phone-white.svg);
-  background-position: 6px center;
-  background-size: 25% 25%;
+  background-position: 20px center;
+  background-size: 26% 26%;
   background-repeat: no-repeat;
 }
 
@@ -694,7 +700,7 @@ body.block {
 
 .form__content div > p,
 .form__content div > p span {
-  font-size: 19px;
+  font-size: 24px;
 }
 
 .form__content div > p {
@@ -711,6 +717,7 @@ body.block {
   flex-direction: column;
   align-items: center;
   padding: 60px;
+  border-right: 1px solid var(--borderColor);
 }
 
 .form__form input {
@@ -724,6 +731,7 @@ body.block {
 .form__content > div {
   padding: 60px;
   border-right: 1px solid var(--borderColor);
+  border-left: 1px solid var(--borderColor);
 }
 
 .form__form button {
@@ -732,14 +740,14 @@ body.block {
   border-radius: 5px;
   border: 1px solid var(--mainColor);
   background-color: transparent;
-  padding: 10px 0px;
+  padding: 20px 0px;
   color: var(--mainColor);
   font-weight: 700;
 }
 
 .form__form input,
 .form__form button {
-  width: 70%;
+  width: 80%;
   margin: 0px 0px 10px 0px;
 }
 
