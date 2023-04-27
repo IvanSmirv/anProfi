@@ -1259,8 +1259,11 @@ body.block {
   }
   .form__phone a {
     padding: 17px 20px 17px 39px;
-    /* background-position: -8px center; */
-    background-size: 30% 30%;
+    background-position: 13px center;
+    background-size: 26% 26%;
+  }
+  .form__phone a:hover {
+    background-position: 13px center;
   }
   .form__form input,
   .form__form button {
@@ -1286,9 +1289,9 @@ body.block {
   .phoneCommon a {
     padding: 25px 20px 25px 32px;
   }
-  /* .popup__phone a {
+  .popup__phone a {
     background-position: -8px center;
-  } */
+  }
   .popup__title {
     font-size: 20px;
   }
@@ -1336,6 +1339,9 @@ body.block {
   }
   .task__btnPopup {
     padding: 20px 30px;
+  }
+  .form__phone a{
+    width: 100%;
   }
 }
 
