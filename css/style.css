@@ -1839,6 +1839,15 @@ body.block {
   .contacts__text>div p:nth-child(3) {
     font-size: 16px;
   }
+
+  .footer__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer__body {
+    padding: 10px 0px 20px 0px;
+  }
 }
 
 /* adaptability */
