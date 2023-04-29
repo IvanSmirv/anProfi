@@ -504,8 +504,8 @@ body.block {
 } */
 
 .services__service>div {
-  width: 250px;
-  height: 200px;
+  width: 320px;
+  height: 190px;
 }
 
 .services__service>div img {
@@ -1522,7 +1522,7 @@ body.block {
   }
 
   .contacts {
-    display: none;
+    /* display: none; */
   }
 
   .work__text {
@@ -1607,7 +1607,7 @@ body.block {
   }
 
   .contacts {
-    display: none;
+    /* display: none; */
   }
 
   .task__task {
@@ -1718,7 +1718,7 @@ body.block {
   }
 
   .services__service>div {
-    width: 255px;
+    width: 290px;
   }
 
   .form__title {
@@ -2001,7 +2001,7 @@ body.block {
 
   .vacancies__title {
     font-size: 16px;
-    padding: 30px 0px 20px 0px;
+    padding: 20px 0px;
   }
 
   .vacancy>div h2 {
@@ -2034,8 +2034,21 @@ body.block {
   .vacancy:last-child {
     border-right: none;
   }
+
   .vacancies .container {
     width: 100%;
+  }
+
+  .task__title {
+    font-size: 16px;
+  }
+
+  .task__task div:nth-child(2) p {
+    font-size: 20px;
+  }
+
+  .about-company__title {
+    font-size: 16px;
   }
 }
 
