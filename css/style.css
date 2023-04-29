@@ -1848,6 +1848,10 @@ body.block {
   .footer__body {
     padding: 10px 0px 20px 0px;
   }
+
+  .contacts__map {
+    width: 100%;
+  }
 }
 
 /* adaptability */
