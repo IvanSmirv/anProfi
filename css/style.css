@@ -1710,7 +1710,11 @@ body.block {
     text-align: center;
   }
 }
-
+@media screen and (max-width: 753px){
+  .contacts__content>div {
+    width: 100%;
+}
+}
 /* 320px - 576px */
 @media screen and (max-width: 576px) {
   .container {
