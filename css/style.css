@@ -1159,9 +1159,10 @@ body.block {
 .work__text ol li:last-child {
   margin: 0px;
 }
+
 /* ------------------ */
 
-.contactsPage{
+.contactsPage {
   display: block !important;
 }
 
@@ -1428,6 +1429,14 @@ body.block {
   .work {
     border-bottom: 1px solid var(--borderColor);
   }
+
+  .contacts__title {
+    padding: 60px 0px 30px 0px;
+  }
+
+  .contacts__text {
+    padding: 30px 0px 30px 30px;
+  }
 }
 
 /* 576px - 768px */
@@ -1557,6 +1566,31 @@ body.block {
   .work__text {
     border-left: none;
     border-right: none;
+  }
+
+  .contacts__content {
+    align-items: center;
+  }
+
+  .contacts__text {
+    padding: 30px 0px;
+  }
+
+  .contacts__text {
+    border-left: none;
+    border-right: none;
+  }
+
+  .contacts__text>div {
+    text-align: center;
+  }
+
+  .footer__body {
+    padding: 20px 0px 30px 0px;
+  }
+
+  .contacts__title {
+    padding: 30px 0px 20px 0px;
   }
 }
 
@@ -1765,26 +1799,45 @@ body.block {
     border-left: none;
     border-right: none;
   }
+
   .about-company__content>div:nth-child(1) p {
     Font-size: 16px;
   }
+
   .resources__title {
     font-size: 16px;
   }
+
   .work__title {
     font-size: 16px;
   }
+
   .work__text {
     padding: 30px 0px;
   }
+
   .work__text h3 {
     font-size: 16px;
   }
+
   .work__text ol li {
     font-size: 16px;
   }
+
   .form__phone a {
     width: 100%;
+  }
+
+  .contacts__title {
+    font-size: 16px;
+  }
+
+  .contacts__text>div p:first-child {
+    font-size: 16px;
+  }
+
+  .contacts__text>div p:nth-child(3) {
+    font-size: 16px;
   }
 }
 
