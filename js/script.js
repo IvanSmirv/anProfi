@@ -89,3 +89,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 });
+
+
+$(document).ready(function () {
+  var tempScrollTop, currentScrollTop = $(window).scrollTop();
+  $(window).scroll(function () {
+    currentScrollTop = $(window).scrollTop();
+    if (currentScrollTop > $('header').height()) {
+      $('body').addClass('fixed-header');
+      if (tempScrollTop > currentScrollTop) {
+        $('header').addClass('show')
+      } else {
+        $('header').removeClass('show');
+      }
+    } else {
+      $('body').removeClass('fixed-header');
+      $('header').removeClass('show');
+    }
+    tempScrollTop = currentScrollTop;
+  });
+});
