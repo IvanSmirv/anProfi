@@ -25,71 +25,33 @@ let isMobile = {
   },
 };
 
-document.querySelectorAll(".popupActive").forEach(function (item) {
-  item.addEventListener("click", function () {
-    document.querySelector(".popup").classList.add("active");
-    document.querySelector(".popupBack").classList.add("active");
-    // document.body.classList.add("block");
-  });
+$('.popupActive').click(function () {
+  $(".popup").addClass("active");
+  $(".popupBack").addClass("active");
+  $('.header').css('position', 'static');
+  $('.header').css('z-index', '1');
+  $('body').css('padding-top', '0px');
+
+})
+$(".popup__closeBtn").click(function () {
+  $(".popup.active").removeClass("active");
+  $(".popupBack").removeClass("active");
+  $('.header').css('position', 'fixed');
+  $('.header').css('z-index', '100');
+  $('body').css('padding-top', '50px');
 });
-
-document
-  .querySelector(".popup__closeBtn")
-  .addEventListener("click", function () {
-    document.querySelector(".popup.active").classList.remove("active");
-    document.querySelector(".popupBack").classList.remove("active");
-    // document.body.classList.remove("block");
-  });
-
-document.querySelector(".popupBack").addEventListener("click", function () {
-  document.querySelector(".popup.active").classList.remove("active");
-  this.classList.remove("active");
-  document.body.classList.remove("block");
+$(".popupBack").click(function () {
+  $(".popup.active").removeClass("active");
+  $('.popupBack.active').removeClass("active");
+  $('.header').css('position', 'fixed');
+  $('.header').css('z-index', '100');
+  $('body').css('padding-top', '50px');
 });
-
-document
-  .querySelector(".header__burger")
-  .addEventListener("click", function () {
-    this.classList.toggle("active");
-    document.querySelector(".header__content").classList.toggle("active");
-    document.body.classList.toggle("block");
-  });
-
-
-
-// form
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('form');
-  form.addEventListener('submit', formSend);
-
-  async function formSend(e) {
-    e.preventDefault();
-
-    let error = formValidate(form);
-
-    let formData = new FormData(form);
-    formData.append('image', formImage.files[0]);
-
-    if (error === 0) {
-      let response = await fetch('sendmail.php', {
-        method: 'POST',
-        body: formData
-      });
-      if (response.ok) {
-        let result = await response.json();
-        alert(result.message);
-        formPreview.innerHTML = '';
-        form.reset();
-      } else {
-        alert("Ошибка");
-      }
-    } else {
-      alert('Заполните обязательные поля');
-    }
-
-  }
+$(".header__burger").click(function () {
+  $(".header__burger").toggleClass("active");
+  $(".header__content").toggleClass("active");
+  $('body').toggleClass("block");
 });
-
 
 $(document).ready(function () {
   var tempScrollTop, currentScrollTop = $(window).scrollTop();
