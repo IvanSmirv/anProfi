@@ -848,7 +848,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   text-align: center;
-  padding: 40px 0px;
+  padding: 100px 0px 40px 0px;
   border-bottom: 1px solid var(--borderColor);
 }
 
@@ -949,7 +949,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   text-align: center;
-  margin: 40px 0px;
+  padding: 100px 0px 40px 0px;
 }
 
 .task__task-row {
@@ -1021,7 +1021,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   text-align: center;
-  padding: 40px 0px;
+  padding: 100px 0px 40px 0px;
   border-bottom: 1px solid var(--borderColor);
 }
 
@@ -1192,7 +1192,7 @@ body {
   font-weight: 500;
   font-size: 36px;
   text-align: center;
-  padding: 40px 0px;
+  padding: 100px 0px 40px 0px;
   border-bottom: 1px solid var(--borderColor);
 }
 
@@ -2117,10 +2117,6 @@ body {
     border-bottom: 1px solid var(--borderColor);
   }
 
-  .task__title {
-    margin: 80px 0px 30px 0px;
-  }
-
   .task__task:nth-child(1) {
     border-right: none;
   }
@@ -2142,7 +2138,7 @@ body {
   }
 
   .contactsPage .contacts__title {
-    padding: 80px 0px 30px 0px;
+    padding: 80px 0px 30px 0px !important;
   }
 }
 
