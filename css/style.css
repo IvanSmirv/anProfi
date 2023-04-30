@@ -150,7 +150,7 @@ body.block {
   cursor: pointer;
   background: #92ad9c;
   border-radius: 5px;
-  padding: 20px 45px;
+  padding: 30px 45px;
   transition: 0.3s;
 }
 
@@ -533,8 +533,8 @@ body {
 } */
 
 .services__service>div {
-  width: 320px;
-  height: 190px;
+  width: 322px;
+  height: 197px;
 }
 
 .services__service>div img {
@@ -2137,6 +2137,9 @@ body {
     padding: 0px 0px 20px 0px;
   }
   .contacts__title {
+    padding: 30px 0px;
+  }
+  .contactsPage .contacts__title{
     padding: 80px 0px 30px 0px;
   }
 }
