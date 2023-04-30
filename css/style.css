@@ -1295,6 +1295,10 @@ body {
   display: none;
 }
 
+.popup__form button{
+  padding: 18px 0px !important;
+}
+
 /* ---------------- */
 
 /*- adaptability */
