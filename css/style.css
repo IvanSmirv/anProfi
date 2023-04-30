@@ -2151,6 +2151,10 @@ body {
   .main-page__btnPopup {
     padding: 20px 30px;
   }
+
+  .popup__form button{
+    padding: 20px 0px !important;
+  }
 }
 
 /* adaptability */
