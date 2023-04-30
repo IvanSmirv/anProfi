@@ -2138,7 +2138,7 @@ body {
   }
 
   .contacts__title {
-    padding: 30px 0px;
+    padding: 30px 0px !important;
   }
 
   .contactsPage .contacts__title {
