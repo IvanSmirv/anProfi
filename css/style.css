@@ -189,6 +189,7 @@ body.block {
   transition: .3s;
   z-index: 100;
   /* display: none; */
+  transition: .3s;
 }
 
 .popup.active {
@@ -680,6 +681,7 @@ body {
 .clients__content>div:nth-child(2) {
   flex: 0 1 59.9%;
   padding: 70px;
+  border-right: 1px solid var(--borderColor);
 }
 
 .clients__content>div:nth-child(2) p,
@@ -1441,6 +1443,10 @@ body {
     width: 720px;
   }
 
+  .clients__content>div:nth-child(2) {
+    border-right: none;
+  }
+
   .services__title {
     width: 100%;
   }
@@ -2152,7 +2158,7 @@ body {
     padding: 20px 30px;
   }
 
-  .popup__form button{
+  .popup__form button {
     padding: 20px 0px !important;
   }
 }
