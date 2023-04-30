@@ -1747,7 +1747,7 @@ body {
   }
 
   .services__service>div {
-    width: 340px;
+    width: 281px;
   }
 
   .form__title {
@@ -2136,10 +2136,12 @@ body {
   .work__body {
     padding: 0px 0px 20px 0px;
   }
+
   .contacts__title {
     padding: 30px 0px;
   }
-  .contactsPage .contacts__title{
+
+  .contactsPage .contacts__title {
     padding: 80px 0px 30px 0px;
   }
 }
