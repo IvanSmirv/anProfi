@@ -1820,7 +1820,7 @@ body {
   }
 
   .form__phone a:hover {
-    background-position: 0px center;
+    /* background-position: 0px center; */
   }
 
   .form__form input,
