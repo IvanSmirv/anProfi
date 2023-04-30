@@ -189,7 +189,7 @@ body.block {
   transition: .3s;
   z-index: 100;
   /* display: none; */
-  transition: .5s;
+  transition: .6s;
 }
 
 .popup.active {
