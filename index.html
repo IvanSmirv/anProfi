@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/favicon/logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon/logo.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,9 +29,9 @@
                 задачи
               </p>
             </div>
-            <form action="" class="popup__form form__form">
-              <input placeholder="Ваше имя" required type="text" />
-              <input placeholder="Ваш телефон" required type="tel" />
+            <form id="form" action="#" class="popup__form form__form">
+              <input name="name" placeholder="Ваше имя" required type="text" />
+              <input name="mobilePhone" placeholder="Ваш телефон" required type="tel" />
               <button type="submit">Получить консультацию</button>
               <p>
                 Нажимая «Оставить заявку», вы соглашаетесь с
@@ -47,7 +47,7 @@
           </div>
         </div>
       </div>
-      <header class="header">
+      <header class="header d-flex justify-content-between">
         <div class="container">
           <div class="header__body">
             <div class="header__logo">
@@ -107,7 +107,7 @@
             <div class="services__services">
               <div class="services__service">
                 <div>
-                  <img src="img/Packing.jpg" alt="" />
+                  <img src="img/packing3.jpg" alt="" />
                 </div>
                 <p>Упаковка</p>
               </div>
@@ -140,8 +140,8 @@
         <div class="container-special">
           <div class="business-project__body">
             <h2 class="business-project__title">
-              Мы уже <span>12 лет</span> работаем с крупными бизнес-проектами и их
-              число только растет!
+              Мы уже <span>12 лет</span> работаем с крупными бизнес-проектами и
+              их число только растет!
             </h2>
             <div class="business-project__content">
               <div class="container">
@@ -194,16 +194,18 @@
               </div>
               <div>
                 <p>
-                  Если для вашего предприятия нужно организовать цикл погрузочных
-                  работ, и вы не хотите вкладывать массивные финансовые ресурсы в
-                  поиск, то, обратившись в AN PROFI вы сможете
+                  Если для вашего предприятия нужно организовать цикл
+                  погрузочных работ, и вы не хотите вкладывать массивные
+                  финансовые ресурсы в поиск, то, обратившись в AN PROFI вы
+                  сможете
                   <span> быстро, эффективно и максимально выгодно</span> решить
                   эту задачу
                 </p>
                 <p>
                   Мы готовы к <span>централизованным решениям</span> задач по
-                  привлечению ресурсов <span>в любой цикл</span> производственной
-                  или складской деятельности
+                  привлечению ресурсов
+                  <span>в любой цикл</span> производственной или складской
+                  деятельности
                 </p>
                 <div class="clients__btnPopup popupActive">
                   <span>Подобрать персонал</span>
@@ -221,8 +223,8 @@
               <div>
                 <p>
                   Свяжитесь с нашими менеджерами прямо сейчас, чтобы получить
-                  подробную информацию по нашим услугуам. Или оставьте контакты и
-                  мы свяжемся с вами в ближайшее время
+                  подробную информацию по нашим услугуам. Или оставьте контакты
+                  и мы свяжемся с вами в ближайшее время
                   <span>(рабочие часы 9:00 - 20:00)</span>
                 </p>
                 <div class="form__phone">
@@ -230,8 +232,19 @@
                 </div>
               </div>
               <form id="form" action="#" class="form__form">
-                <input name="name" placeholder="Ваше имя" required type="text" />
-                <input name="mobilePhone" placeholder="Ваш телефон" required type="tel" />
+                <p>Или оставьте контакты и мы свяжемся с вами в ближайшее время </p>
+                <input
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                  type="text"
+                />
+                <input
+                  name="mobilePhone"
+                  placeholder="Ваш телефон"
+                  required
+                  type="tel"
+                />
                 <button type="submit">Получить консультацию</button>
                 <p>
                   Нажимая «Оставить заявку», вы соглашаетесь с
@@ -263,7 +276,9 @@
                 </div>
               </div>
               <div class="contacts__map">
-                <div style="position: relative; overflow: hidden; border: none;">
+                <div
+                  style="position: relative; overflow: hidden; border: none;"
+                >
                   <a
                     href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
                     style="
