@@ -713,44 +713,29 @@ body {
 .form__phone {
   text-align: center;
   margin: 20px 0px 0px 0px;
+  background-color: #92ad9c;
+  padding: 25px 40px 25px 70px;
+  border-radius: 5px;
 }
 
 .form__phone a {
-  display: inline-block;
+  display: inline;
   font-family: var(--Mont);
   font-size: 18px;
   font-weight: 500;
-  padding: 25px 40px 25px 70px;
   color: #ffffff;
-  background: #92ad9c;
-  border-radius: 5px;
   transition: 0.3s;
-  position: relative;
+  background-image: url(../img/icons/phone-white.svg);
+  background-position: 45px 26px;
+  background-size: 20px;
+  background-repeat: no-repeat;
 }
 
-.form__phone a::before {
-  content: '';
-  display: inline-block;
-  background: url(../img/icons/phone-white.svg) center / 100% 100% no-repeat;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 30px;
-}
 
 .form__phone a:hover {
   background-color: transparent;
   color: var(--mainColor);
   outline: 1px solid var(--mainColor);
-}
-
-.form__phone a:hover::before {
-  content: '';
-  background: url(../img/icons/phone-green.svg) center / 100% 100% no-repeat;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  left: 30px;
 }
 
 .form__title {
@@ -1830,8 +1815,8 @@ body {
 
   .form__phone a {
     padding: 17px 20px 17px 39px;
-    background-position: 0px center;
-    background-size: 26% 26%;
+    background-position: -9px 20px;
+    background-size: 26% 35%;
   }
 
   .form__phone a:hover {
