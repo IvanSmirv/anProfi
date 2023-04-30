@@ -184,11 +184,17 @@ body.block {
 }
 
 .popup {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  z-index: 100;
+  /* display: none; */
 }
 
 .popup.active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  /* display: block; */
 }
 
 .popup__body {
@@ -2032,7 +2038,7 @@ body {
 
   .vacancies__title {
     font-size: 16px;
-    padding: 80px 0px 30px 0px;
+    padding: 75px 0px 20px 0px;
   }
 
   .vacancy>div h2 {
@@ -2072,6 +2078,7 @@ body {
 
   .task__title {
     font-size: 16px;
+    padding: 75px 0px 20px 0px;
   }
 
   .task__task div:nth-child(2) p {
@@ -2126,7 +2133,7 @@ body {
   }
 
   .about-company__title {
-    padding: 80px 0px 30px 0px;
+    padding: 75px 0px 20px 0px;
   }
 
   .work__body {
@@ -2138,7 +2145,11 @@ body {
   }
 
   .contactsPage .contacts__title {
-    padding: 80px 0px 30px 0px !important;
+    padding: 75px 0px 20px 0px !important;
+  }
+
+  .main-page__btnPopup {
+    padding: 20px 30px;
   }
 }
 
