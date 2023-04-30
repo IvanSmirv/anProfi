@@ -1747,7 +1747,7 @@ body {
   }
 
   .services__service>div {
-    width: 290px;
+    width: 340px;
   }
 
   .form__title {
@@ -1997,6 +1997,8 @@ body {
 
   .contacts__map {
     width: 100%;
+    padding: 0px 0px 30px 0px;
+    border-right: none;
   }
 
   .vacancy>div:nth-child(1) {
@@ -2030,7 +2032,7 @@ body {
 
   .vacancies__title {
     font-size: 16px;
-    padding: 20px 0px;
+    padding: 80px 0px 30px 0px;
   }
 
   .vacancy>div h2 {
@@ -2104,6 +2106,38 @@ body {
   .form__content>div,
   .form__form {
     padding: 20px 30px;
+  }
+
+  .task__content {
+    border-left: none;
+    border-right: none;
+  }
+
+  .task__task {
+    border-bottom: 1px solid var(--borderColor);
+  }
+
+  .task__title {
+    margin: 80px 0px 30px 0px;
+  }
+
+  .task__task:nth-child(1) {
+    border-right: none;
+  }
+
+  .task .container {
+    width: 100%;
+  }
+
+  .about-company__title {
+    padding: 80px 0px 30px 0px;
+  }
+
+  .work__body {
+    padding: 0px 0px 20px 0px;
+  }
+  .contacts__title {
+    padding: 80px 0px 30px 0px;
   }
 }
 
