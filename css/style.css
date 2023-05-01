@@ -189,7 +189,7 @@ body.block {
   transition: .3s;
   z-index: 100;
   /* display: none; */
-  transition: .6s;
+  transition: .5s;
 }
 
 .popup.active {
@@ -247,7 +247,7 @@ body.block {
 .popup__title {
   font-family: var(--Nunito);
   font-weight: 700;
-  font-size: 44px;
+  font-size: 43px;
   text-align: center;
   color: #333333;
 }
@@ -489,7 +489,7 @@ body {
 .main-page__image img {
   max-width: 100%;
   /* max-width: 960px; */
-  max-height: 600px;
+  max-height: 100%;
 }
 
 /* -------------- */
@@ -1360,7 +1360,7 @@ body {
   }
 
   .header__burger span {
-    top: 50%;
+    top: 48%;
     left: 0;
   }
 
@@ -2164,6 +2164,9 @@ body {
 
   .popup__form button {
     padding: 20px 0px !important;
+  }
+  .clients__btnPopup {
+    padding: 20px 30px;
   }
 }
 
