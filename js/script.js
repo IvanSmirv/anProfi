@@ -25,13 +25,18 @@ let isMobile = {
   },
 };
 
+if (isMobile.any()) {
+  document.querySelector('body').classList.add('mobile')
+} else {
+  document.querySelector('body').classList.add('pc')
+}
+
 $('.popupActive').click(function () {
   $(".popup").addClass("active");
   $(".popupBack").addClass("active");
   $('.header').css('position', 'static');
   $('.header').css('z-index', '1');
   $('body').css('padding-top', '0px');
-
 })
 $(".popup__closeBtn").click(function () {
   $(".popup.active").removeClass("active");
