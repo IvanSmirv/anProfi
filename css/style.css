@@ -1303,6 +1303,7 @@ body {
 .vacancy__btnPopup span {
   color: var(--mainColor);
 }
+
 .vacancy__btnPopup:hover span {
   color: white;
 }
@@ -2187,11 +2188,17 @@ body {
   .clients__btnPopup {
     padding: 20px 30px;
   }
+
   .task__img img {
     object-fit: cover;
   }
+
   .task__img {
     height: 300px;
+  }
+
+  .form__form input {
+    padding: 17px;
   }
 }
 
