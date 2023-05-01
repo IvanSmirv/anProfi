@@ -1290,7 +1290,22 @@ body {
   margin: 0px 10px 3px 0px;
 }
 
-.vacancy__btnPopup {}
+.vacancy__btnPopup {
+  background-color: white;
+  outline: 1px solid var(--mainColor);
+}
+
+.vacancy__btnPopup:hover {
+  background-color: var(--mainColor);
+}
+
+.vacancy__btnPopup span {
+  color: var(--mainColor);
+}
+.vacancy__btnPopup:hover span {
+  color: white;
+}
+
 
 .form__form p:nth-child(1) {
   display: none;
