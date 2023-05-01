@@ -2200,6 +2200,10 @@ body {
   .form__form input {
     padding: 17px;
   }
+
+  .popup__content {
+    padding: 60px 15px;
+  }
 }
 
 /* adaptability */
