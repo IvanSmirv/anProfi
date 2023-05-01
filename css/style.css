@@ -305,6 +305,7 @@ body.block {
 
 body {
   padding-top: 50px;
+  overflow-x: hidden;
 }
 
 .fixed-header header {
@@ -2188,6 +2189,9 @@ body {
   }
   .task__img img {
     object-fit: cover;
+  }
+  .task__img {
+    height: 300px;
   }
 }
 
