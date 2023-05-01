@@ -1417,6 +1417,20 @@ body {
   }
 }
 
+body.pc .spec-img-pc{
+  display: block;
+}
+body.mobile .spec-img-pc{
+  display: none;
+}
+
+body.pc .spec-img-mobile{
+  display: none;
+}
+body.mobile .spec-img-mobile{
+  display: block;
+}
+
 /* 992px - 1200px */
 @media screen and (max-width: 1200px) {
   .container {
