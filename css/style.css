@@ -379,6 +379,7 @@ body {
 
 .header__btnPopup {
   background: none;
+  padding: 20px 30px;
 }
 
 .header__phone,
@@ -453,7 +454,7 @@ body {
 }
 
 .main-page__body {
-  padding: 100px 20px 100px 0px;
+  padding: 200px 20px 100px 0px;
 }
 
 .main-page__title {
@@ -1295,7 +1296,7 @@ body {
   display: none;
 }
 
-.popup__form button{
+.popup__form button {
   padding: 18px 0px !important;
 }
 
@@ -1747,6 +1748,7 @@ body {
   .vacancy__btnPopup {
     display: block;
     text-align: center;
+    padding: 20px 30px;
   }
 }
 
@@ -2165,6 +2167,7 @@ body {
   .popup__form button {
     padding: 20px 0px !important;
   }
+
   .clients__btnPopup {
     padding: 20px 30px;
   }
