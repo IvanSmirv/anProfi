@@ -1221,7 +1221,7 @@ body {
 
 .vacancy {
   flex: 0 1 50%;
-  padding: 50px 20px;
+  padding: 40px 35px;
   border-left: 1px solid var(--borderColor);
 }
 
@@ -1231,34 +1231,23 @@ body {
 
 .vacancy>div {}
 
-.vacancy>div:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
+.vacancy>div:nth-child(2){
+  margin: 15px 0px 25px 0px;
 }
-
-.vacancy>div:nth-child(1) a {
+.vacancy>div:nth-child(2) p {
   font-family: var(--Nunito);
-  font-size: 24px;
-  position: relative;
-  padding: 0px 0px 0px 30px;
+  font-size: 20px;
+  margin: 0px 0px 5px 0px;
 }
 
-.vacancy>div:nth-child(1) a::before {
-  content: '';
-  display: inline-block;
-  background: url(../img/icons/location.svg) left center / 100% 100% no-repeat;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 3px;
-  left: 0;
+.vacancy>div:nth-child(2) p:last-child {
+  margin: 0px;
 }
 
 .vacancy>div h2 {
   font-family: var(--Nunito);
   font-size: 24px;
   text-transform: uppercase;
-  margin: 0px 0px 20px 0px;
 }
 
 .vacancy>div h3 {
@@ -1267,33 +1256,11 @@ body {
   margin: 0px 0px 10px 0px;
 }
 
-.vacancy>div ul {
-  margin: 20px 0px;
-}
-
-.vacancy>div ul li {
-  font-size: 20px;
-  font-family: var(--Nunito);
-  padding: 0px 0px 0px 30px;
-}
-
-.vacancy>div ul li:last-child {
-  margin: 0;
-}
-
-.vacancy>div ul li::before {
-  content: '';
-  display: inline-block;
-  background: #000000;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  margin: 0px 10px 3px 0px;
-}
 
 .vacancy__btnPopup {
   background-color: white;
   outline: 1px solid var(--mainColor);
+  padding: 25px 45px;
 }
 
 .vacancy__btnPopup:hover {
@@ -1612,9 +1579,22 @@ body.mobile .spec-img-mobile{
     flex-direction: column;
   }
 
+  .vacancy>div h2, .vacancy>div:nth-child(2) p {
+    text-align: center;
+  }
   .vacancy {
     border-right: 1px solid var(--borderColor);
     border-bottom: 1px solid var(--borderColor);
+  }
+  .vacancy__btnPopup {
+    display: block;
+    text-align: center;
+  }
+  .vacancies__title, .task__title, .about-company__title, .contacts__title {
+    padding: 160px 0px 40px 0px;
+  }
+  .vacancies .container {
+    width: 100%;
   }
 }
 
@@ -1773,7 +1753,7 @@ body.mobile .spec-img-mobile{
   }
 
   .contacts__title {
-    padding: 30px 0px 20px 0px;
+    padding: 160px 0px 40px 0px;
   }
 
   .vacancy__btnPopup {
