@@ -1,0 +1,311 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon/logo.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>AN PROFI</title>
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <div class="popupBack"></div>
+      <div class="popup">
+        <div class="popup__body">
+          <div class="popup__closeBtn">
+            <span></span>
+          </div>
+          <div class="popup__content">
+            <h2 class="popup__title">Подбор персонала</h2>
+            <div class="popup__text">
+              <p>
+                Оставьте свой телефон и мы свяжемся с вами для решения вашей
+                задачи
+              </p>
+            </div>
+            <form id="form" action="../php/validation.php" method="post" name="form" class="form__form popup__form">
+              <p>
+                Или оставьте контакты и мы свяжемся с вами в ближайшее время
+              </p>
+              <input
+                name="name"
+                placeholder="Ваше имя"
+                required
+                type="text"
+              />
+              <input
+                name="mobilePhone"
+                placeholder="Ваш телефон"
+                required
+                type="tel"
+              />
+              <button type="submit">Получить консультацию</button>
+              <p>
+                Нажимая «Получить консультацию», вы соглашаетесь с
+                <span>Политикой конфиденциальности</span>
+              </p>
+            </form>
+            <div class="popup__text">
+              <p>Или свяжитесь с нами прямо сейчас</p>
+            </div>
+            <div class="popup__phone phoneCommon">
+              <a href="tel:+79001454000">+7 900 145 40 00</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <div class="header__logo">
+              <a href="../index.html"
+                ><img src="../img/icons/logo.svg" alt=""
+              /></a>
+            </div>
+            <div class="header__content">
+              <div class="header__nav">
+                <a href="../index.html">Главная</a>
+                <a href="services.html">Услуги</a>
+                <a href="#">О компании</a>
+                <a href="vacancies.html">Вакансии</a>
+                <a href="contacts.html">Контакты</a>
+              </div>
+              <div class="header__phone">
+                <a href="tel:+79001454000">+7 900 145 40 00</a>
+              </div>
+              <div class="header__btnPopup popupActive">
+                <span>Подобрать персонал</span>
+              </div>
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="about-company">
+        <div class="about-company__body">
+          <h1 class="about-company__title">О компании</h1>
+          <div class="container">
+            <div class="about-company__content">
+              <div>
+                <p>
+                  С 2011 года компания «AN PROFI» оказывает услуги крупному и
+                  малому бизнесу по привлечению ресурсов в любой цикл
+                  производственной или складской деятельности.
+                </p>
+                <p>
+                  Мы успели завоевать доверие крупнейших производственных и
+                  торговых организаций, таких как СДЭК, Русский огород,
+                  Мегамаркет Трофей и других.
+                </p>
+                <p>
+                  Ключевая задача компании «AN PROFI» – создать максимально
+                  комфортные и выгодные условия для сотрудничества, сэкономить
+                  время и деньги своих клиентов на складских задачах
+                </p>
+              </div>
+              <div class="about-company__img">
+                <img loading="lazy" src="../img/about-company.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="resources">
+        <div class="resources__body">
+          <h2 class="resources__title">
+            Наши ресурсы состоят из исполнителей, уже получивших опыт работы на
+            крупных складских комплексах в торговых и логистических компаниях.
+          </h2>
+          <div class="resources__content">
+            <div>
+              <div class="resources__img">
+                <img loading="lazy" src="../img/icons/handshake-icon.svg" alt="" />
+              </div>
+              <div>
+                <p>800+</p>
+                <p>оказанных услуг</p>
+              </div>
+            </div>
+            <div>
+              <div class="resources__img">
+                <img loading="lazy" src="../img/icons/Group-icon.svg" alt="" />
+              </div>
+              <div>
+                <p>500+</p>
+                <p>доступных исполнителей</p>
+              </div>
+            </div>
+            <div>
+              <div class="resources__img">
+                <img loading="lazy" src="../img/icons/Clock-icon.svg" alt="" />
+              </div>
+              <div>
+                <p>3 часа</p>
+                <p>в среднем на подбор решения</p>
+              </div>
+            </div>
+            <div>
+              <div class="resources__img">
+                <img loading="lazy" src="../img/icons/check-mark.svg" alt="" />
+              </div>
+              <div>
+                <p>12</p>
+                <p>лет успешной работы</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work__body">
+          <h2 class="work__title">
+            Точная стоимость определяется исходя из уровня сложности вакансии,
+            срочности и продолжительности задачи
+          </h2>
+          <div class="container">
+            <div class="work__content">
+              <div class="work__img">
+                <img loading="lazy" src="../img/img-with-logo2.jpg" alt="" />
+              </div>
+              <div class="work__text">
+                <h3>Ход нашей работы</h3>
+                <ol>
+                  <li>Обсуждение задачи</li>
+                  <li>Заключение договора</li>
+                  <li>Согласование заявки</li>
+                  <li>Выполнение задачи исполнителем</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__body">
+          <div class="container">
+            <div class="contacts__content">
+              <div class="contacts__text">
+                <div>
+                  <p>Офис</p>
+                  <p>Москва, улица Барклая, 13с1</p>
+                  <p>Время работы: 9:00 - 20:00</p>
+                </div>
+                <div>
+                  <p>Телефон</p>
+                  <p>+7 900 145 40 00</p>
+                </div>
+                <div>
+                  <p>Почта</p>
+                  <p>info@anprofi.ru</p>
+                </div>
+              </div>
+              <div class="contacts__map">
+                <div
+                  style="position: relative; overflow: hidden; border: none;"
+                >
+                  <a
+                    href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                    style="
+                      color: #eee;
+                      font-size: 12px;
+                      position: absolute;
+                      top: 0px;
+                    "
+                    >Москва</a
+                  ><a
+                    href="https://yandex.ru/maps/213/moscow/house/ulitsa_barklaya_13s1/Z04Ycg5lSkUEQFtvfXt1dXVrYw==/services/?indoorLevel=1&ll=37.495441%2C55.744999&tab=services&utm_medium=mapframe&utm_source=maps&z=17.75"
+                    style="
+                      color: #eee;
+                      font-size: 12px;
+                      position: absolute;
+                      top: 14px;
+                    "
+                    >Улица Барклая, 13с1 — Яндекс Карты</a
+                  ><iframe
+                    loading="lazy"
+                    src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=37.495441%2C55.744999&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjcwOTAwNhI80KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0JHQsNGA0LrQu9Cw0Y8sIDEz0YExIgoNMPsVQhXe-l5C&tab=services&z=17.75"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen="true"
+                    style="position: relative; border: none;"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form">
+        <div class="form__body">
+          <h2 class="form__title">Будем рады проконсультировать вас</h2>
+          <div class="container">
+            <div class="form__content">
+              <div>
+                <p>
+                  Свяжитесь с нашими менеджерами прямо сейчас, чтобы получить
+                  подробную информацию по нашим услугуам. Или оставьте контакты
+                  и мы свяжемся с вами в ближайшее время
+                  <span>(рабочие часы 9:00 - 20:00)</span>
+                </p>
+                <div class="form__phone">
+                  <a href="tel:+79001454000">+7 900 145 40 00</a>
+                </div>
+              </div>
+              <form id="form" action="../php/validation.php" method="post" name="form" class="form__form">
+                <p>
+                  Или оставьте контакты и мы свяжемся с вами в ближайшее время
+                </p>
+                <input
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                  type="text"
+                />
+                <input
+                  name="mobilePhone"
+                  placeholder="Ваш телефон"
+                  required
+                  type="tel"
+                />
+                <button type="submit">Получить консультацию</button>
+                <p>
+                  Нажимая «Получить консультацию», вы соглашаетесь с
+                  <span>Политикой конфиденциальности</span>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div class="footer__logo">
+              <a href="../index.html">
+                <img src="../img/icons/logo.svg" alt="" />
+              </a>
+            </div>
+            <div class="footer__text">
+              <p>©AN PROFI 2023. Все права защищены</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/DynamicAdaptive.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
