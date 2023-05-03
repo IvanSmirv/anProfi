@@ -1445,7 +1445,13 @@ body.mobile .spec-img-mobile{
   .container {
     width: 720px;
   }
-
+  .vacancy__btnPopup {
+    display: block;
+    text-align: center;
+    padding: 20px 30px;
+    max-width: 210px;
+    margin: 0 auto;
+  }
   .clients__content>div:nth-child(2) {
     border-right: none;
   }
@@ -1603,7 +1609,9 @@ body.mobile .spec-img-mobile{
   .container {
     width: 540px;
   }
-
+  .vacancy {
+    padding: 30px 23px;
+  }
   .resources__content>div {
     width: 100%;
   }
@@ -1754,12 +1762,6 @@ body.mobile .spec-img-mobile{
 
   .contacts__title {
     padding: 160px 0px 40px 0px;
-  }
-
-  .vacancy__btnPopup {
-    display: block;
-    text-align: center;
-    padding: 20px 30px;
   }
 }
 
